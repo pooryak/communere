@@ -1,0 +1,12 @@
+{
+  "locationTypes": [
+    {
+      "key": 1,
+      "value": "business"
+    },
+    {
+      "key": 2,
+      "value": "fun"
+    }
+  ]
+}

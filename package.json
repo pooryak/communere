@@ -10,8 +10,12 @@
     "@types/node": "^12.0.0",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
+    "axios": "^0.21.1",
+    "leaflet": "^1.7.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-leaflet": "^3.2.1",
+    "react-query": "^3.19.6",
     "react-scripts": "4.0.3",
     "typescript": "^4.1.2",
     "web-vitals": "^1.0.1"
@@ -20,7 +24,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "api": "json-server --watch db.json --port 5000",
+    "dev": "concurrently \"yarn start\" \"yarn run api\""
   },
   "eslintConfig": {
     "extends": [
@@ -28,16 +34,26 @@
       "react-app/jest"
     ]
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "@types/leaflet": "^1.7.4",
+    "@typescript-eslint/eslint-plugin": "^4.29.1",
+    "@typescript-eslint/parser": "^4.29.1",
+    "concurrently": "^6.2.1",
+    "eslint-config-airbnb": "18.2.1",
+    "eslint-config-airbnb-typescript": "^12.3.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-jest": "^24.4.0",
+    "eslint-plugin-jsx-a11y": "6.4.1",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "7.21.5",
+    "eslint-plugin-react-hooks": "1.7.0",
+    "json-server": "^0.16.3",
+    "prettier": "^2.3.2"
   }
 }

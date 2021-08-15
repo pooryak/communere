@@ -1,0 +1,16 @@
+.add_button { 
+    position: fixed;
+    font-size: 36px;
+    right: 17px;
+    bottom: 25px;
+    z-index: 1000;
+    background-color: aliceblue;
+    border-radius: 50%;
+    height: 36px;
+    width: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
